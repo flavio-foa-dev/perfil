@@ -1,7 +1,8 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Contact from './pages/contact';
+import Tools from './pages/tools';
+import NotFound from './pages/notFound';
 import Perfil from './pages/perfil';
 import Project from './pages/project';
 
@@ -10,17 +11,21 @@ function App() {
     <div className="App">
       <Routes>
         <Route
-          path="/"
+          exact path="/"
           element={<Perfil/>}
         />
         <Route
-          path="/project"
+          exact path="/project"
           element={<Project/>}
         />
         <Route
-          path="/contact"
-          element={<Contact/>}
-          ></Route>
+          exact path="/tools"
+          element={<Tools/>}
+        />
+        <Route
+        exact path="*"
+        element={<NotFound/>}
+        />
       </Routes>
     </div>
   );

@@ -5,6 +5,7 @@ import Tools from './pages/tools';
 import NotFound from './pages/notFound';
 import Perfil from './pages/perfil';
 import Project from './pages/project';
+import Contact from './pages/contact';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         <Route
           exact path="/project"
           element={<Project/>}
+        />
+        <Route
+          exact path="/contact"
+          element={<Contact/>}
         />
         <Route
           exact path="/tools"

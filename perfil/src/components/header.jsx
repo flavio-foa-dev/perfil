@@ -2,16 +2,37 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div className="flex items-center justify-evenly  bg-gradient-to-r from-violet-500 to-fuchsia-500  px-6 py-6">
-    <img src="https://avatars.githubusercontent.com/u/78602566?v=4" alt="avatar" className="rounded-full w-48"/>
-    <div>
-      <h1>HI! I Am </h1>
-      <p>Flavio Andrade</p>
-    </div>
-    <div>
-      <h1>Contato</h1>
-      <p>Flavio Andrade</p>
-    </div>
-  </div>
+    <section className="bg-gradient-to-r from-blue-500 to-fuchsia-500  px-4 py-3 flex justify-around">
+
+      <div className="">
+       <img src="https://avatars.githubusercontent.com/u/78602566?v=4" alt="avatar" className="rounded-full w-20 "/>
+      </div>
+
+      <div className="flex">
+        <ul className="flex items-center">
+
+          <li className="pl-6">
+            <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white hover:border-b-2"><a href="/">Perfil</a></span>
+          </li>
+
+          <li className="pl-6">
+            <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white hover:border-b-2"><a href="project">Project</a></span>
+          </li>
+
+          <li className="pl-6">
+            <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white hover:border-b-2"><a href="contact">Contact</a></span>
+          </li>
+
+          <li className="pl-6">
+            <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white hover:border-b-2"><a href="tools">Tools</a></span>
+          </li>
+
+          <li className="pl-6">
+            <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white hover:border-b-2"><a href="https://flavio-foa-dev.github.io/site/" target="_blank" rel="noreferrer">Site</a></span>
+          </li>
+
+        </ul>
+      </div>
+    </section>
   )
 }

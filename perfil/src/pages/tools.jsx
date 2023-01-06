@@ -1,13 +1,11 @@
 import React from 'react'
 import Footer from '../components/footer'
 import Header from '../components/header'
-import NavBar from '../components/navBar'
 
 export default function Tools() {
   return (
     <>
       <Header/>
-      <NavBar/>
       <div className="flex py-20">
         <h2 className="text-center font-semibold uppercase sm:text-5xl lg:text-6xl">
           Here's what I'm good at
@@ -29,7 +27,6 @@ export default function Tools() {
             <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" alt="Docker"/>
             <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="gitHub"/>
         </div>
-
       </div>
       <Footer/>
     </>

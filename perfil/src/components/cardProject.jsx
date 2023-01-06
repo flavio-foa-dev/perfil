@@ -25,8 +25,8 @@ export default function CardPrject() {
             <p className="group text-lg font-bold text-white">Systems Development</p>
           </div>
 
-      </div>
-    </section>
+        </div>
+      </section>
     </div>
   )
 }
